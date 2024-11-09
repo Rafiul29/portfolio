@@ -29,7 +29,7 @@ function App() {
           <div className="container mt-24 mx-auto sm:py-4 py-6 px-12">
             <Pages/>
           </div>
-        {/* <Footer/> */}
+        <Footer/>
         </main>
       </BrowserRouter>
     </>

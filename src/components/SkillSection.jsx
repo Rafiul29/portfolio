@@ -39,7 +39,7 @@ export default function SkillSection() {
     const isInView = useInView(ref, { once: true })
 
     return (
-    <section id='skills'>
+    <section id='skills' >
         <h2 className="text-center text-2xl sm:text-3xl font-bold text-zinc-300 mt-8 mb-8 md:mb-12">Tech skills</h2>
 
         <div className='grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:grid-cols-4 lg:gap-x-24'>

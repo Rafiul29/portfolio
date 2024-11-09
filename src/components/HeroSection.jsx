@@ -27,7 +27,7 @@ export default function HeroSection() {
             />
           </h1>
 
-          <p className="text-zinc-500 text-base sm:text-lg lg:text-xl mb-6">
+          <p className="text-zinc-300 text-base sm:text-lg lg:text-xl mb-6">
             I&apos;m Skilled in Python, Django, and Django REST Framework, I
             build scalable APIs and backend solutions focused on performance and
             reliability for modern web applications. Passionate about clean code
@@ -41,7 +41,7 @@ export default function HeroSection() {
               target="_blank"
             >
               <button
-                className="sm:w-fit px-6 py-3 border-2 rounded-full font-semibold border-zinc-950
+                className="sm:w-fit px-6 py-2 border-2 rounded-full font-semibold border-zinc-950
                         text-zinc-300 button-contact bg-gradient-to-br from-cyan-600 via-indigo-600 to-pink-600"
               >
                 Resume

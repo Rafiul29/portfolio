@@ -5,6 +5,7 @@ import AboutSection from '../components/AboutSection';
 import ProjectSection from '../components/ProjectSection';
 import SkillSection from '../components/SkillSection';
 import ContactSection from '../components/ContactSection';
+import BlogSection from '../components/BlogSection';
 
 
 function Pages(){
@@ -16,6 +17,7 @@ function Pages(){
                 <Route path='/skills' element={<SkillSection/>}/>
                 <Route path='/projects' element={<ProjectSection/>}/>
                 <Route path='/contacts' element={<ContactSection/>}/>
+                <Route path='/blogs' element={<BlogSection/>}/>
             </Routes>
         </AnimatePresence>
     )

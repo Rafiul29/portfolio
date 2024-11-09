@@ -48,8 +48,8 @@ export default function ProjectSection( {isHomepage} ) {
 
 
     return (
-        <section id="projects">
-            <h2 className="text-center text-2xl sm:text-3xl font-bold text-zinc-300 mt-8 mb-8 md:mb-12">My Projects</h2>
+        <section id="projects" className="py-10">
+            <h2 className="text-center text-2xl sm:text-3xl font-bold text-zinc-300 mt-8 md:mb-12">My Projects</h2>
 
             <ul ref={ref} className="grid  md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
                 {projectsToDisplay.map((project, index) => (

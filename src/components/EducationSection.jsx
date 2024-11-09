@@ -1,8 +1,8 @@
 const EducationSection = () => {
   return (
-    <section id="eudcation" className="">
+    <section id="eudcation" className="py-10">
       <h2 className="text-center text-2xl sm:text-3xl font-bold text-zinc-300 mt-8 mb-8 md:mb-10 ">
-        Education
+       My Education
       </h2>
       <div className="flex justify-center items-center">
         <ol className="relative border-s border-gray-200 dark:border-gray-700 ">

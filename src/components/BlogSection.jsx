@@ -1,27 +1,61 @@
-const EducationSection = () => {
-  return (
-    <section id="eudcation" className="">
-      <h2 className="text-center text-2xl sm:text-3xl font-bold text-zinc-300 mt-8 mb-8 md:mb-10 ">
-        Education
-      </h2>
-      <div className="flex justify-center items-center">
-        <ol className="relative border-s border-gray-200 dark:border-gray-700 ">
-          <li className="ms-4">
-            <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-            <time className="mb-1 text-2xl font-normal leading-none text-gray-400 dark:text-gray-500">
-              Present
-            </time>
-            <h3 className="text-xl font-semibold dark:text-white">
-              Islamic University, Kushtia
-            </h3>
-            <p className="mb-4 text-base font-normal text-gray-300 dark:text-gray-400">
-              Department of Computer Science and Engineering
-            </p>
-          </li>
-        </ol>
-      </div>
-    </section>
-  );
-};
+/* eslint-disable react/prop-types */
+"use client";
+import { useRef } from "react";
+import { Link } from "react-router-dom";
+import ProjectCard from "./ProjectCard";
+import { motion, useInView } from "framer-motion";
+import BlogCard from "./BlogCard";
 
-export default EducationSection;
+
+const blogsData = [
+    {
+        id: 1,
+        title: "Key Features of React.js",
+        description: "Component-Based Architecture: React applications are built using reusable components, making UI development faster and more efficient. Virtual DOM: React uses a Virtual DOM to improve performance by updating only the parts of the UI that have changed. One-Way Data Binding: React’s data flow is unidirectional, which provides more control over the application state. JSX Syntax: JSX, a syntax extension, allows developers to write HTML-like code directly in JavaScript, making the code more readable.",
+        image: "/images/blogs/1.png",
+        date: ""
+       
+    },
+    
+];
+
+
+
+export default function BlogSection( {isHomepage} ) {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
+
+    const cardVariants = {
+        initial: { opacity: 0,  y: 50 },
+        animate: { opacity: 1, y: 0 },
+    };
+
+    const blogsDataToDisplay = isHomepage ? blogsData.slice(0, 3) : blogsData;
+
+
+    return (
+        <section id="blogs" className="py-10">
+            <h2 className="text-center text-2xl sm:text-3xl font-bold text-zinc-300 mt-8 mb-8 md:mb-12">Blogs</h2>
+
+            <ul ref={ref} className="grid  justify-items-center md:grid-cols-2  gap-8 md:gap-12">
+                {blogsDataToDisplay.map((project, index) => (
+                <motion.li
+                    key={index}
+                    variants={cardVariants}
+                    initial="initial"
+                    animate={isInView ? "animate" : "initial"}
+                    transition={{ duration: 0.3, delay: index * 0.4 }}
+                >
+                    <BlogCard
+                    key={project.id}
+                    title={project.title}
+                    description={project.description}
+                    imgUrl={project.image}
+                    />
+                </motion.li>
+                ))}
+            </ul>
+
+        </section>
+    )
+}
