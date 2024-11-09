@@ -5,35 +5,35 @@ import { useRef } from 'react';
 
 
 export default function SkillSection() {
-    /*const handleDownload = () => {
-        const pdfFilePath = '/files/cv.pdf';
-        const link = document.createElement('a');
-        link.href = pdfFilePath;
-        link.download = 'CV-ChiaraBissolo.pdf';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    };*/
+
 
     const techSkills = [
-        { name: 'Html e Css', percentage: 100 },
-        { name: 'Javascript', percentage: 100 },
+        { name: 'Next.js,', percentage: 100 },
         { name: 'React', percentage: 100 },
-        { name: 'TypeScript', percentage: 70 },
-        { name: 'Node.js', percentage: 70 },
+        { name: 'Redux,', percentage: 70 },
+        { name: 'JavaScript', percentage: 70 },
+        { name: 'Tailwind CSS,', percentage: 95 },
         { name: 'Tailwind CSS', percentage: 100 },
-        { name: 'Responsive design', percentage: 100},
-        { name: 'UI/UX Design', percentage: 50 },
-        { name: 'Basi di dati e linguaggio SQL', percentage: 30 }
+        { name: 'Bootstrap', percentage: 90},
+        { name: 'CSS & HTML', percentage: 100},
+        { name: 'Django', percentage: 60},
+        { name: 'Django Rest Framework', percentage: 55},
+        { name: 'Node.js', percentage: 60},
+        { name: 'Express.js', percentage: 65},
+        { name: 'MongoDB', percentage: 70},
+        { name: 'SQL', percentage: 80},
+        { name: 'C', percentage: 85},
+        { name: 'C++', percentage: 80},
+        { name: 'Python', percentage: 50},
     ];
 
-    const softSkills = [
-        { name: 'Organizzazione', icon: faFolderTree },
-        { name: 'Empatia', icon: faHandHoldingHeart },
-        { name: 'Curiosità e motivazione', icon: faRocket },
-        { name: 'Pesiero critico', icon: faLightbulb },
-        { name: 'Gestione del tempo', icon: faClock }
-    ];
+    // const softSkills = [
+    //     { name: 'Organizzazione', icon: faFolderTree },
+    //     { name: 'Empatia', icon: faHandHoldingHeart },
+    //     { name: 'Curiosità e motivazione', icon: faRocket },
+    //     { name: 'Pesiero critico', icon: faLightbulb },
+    //     { name: 'Gestione del tempo', icon: faClock }
+    // ];
     
     const ref = useRef(null)
     const isInView = useInView(ref, { once: true })
@@ -42,7 +42,7 @@ export default function SkillSection() {
     <section id='skills'>
         <h2 className="text-center text-2xl sm:text-3xl font-bold text-zinc-300 mt-8 mb-8 md:mb-12">Tech skills</h2>
 
-        <div className='grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:grid-cols-3 lg:gap-x-24'>
+        <div className='grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:grid-cols-4 lg:gap-x-24'>
         {techSkills.map((skill, index) => (
             <motion.div
                 key={index}
@@ -75,9 +75,9 @@ export default function SkillSection() {
         </div>
 
 
-        <h2 className="text-center text-2xl sm:text-3xl font-bold text-zinc-300 mt-12 mb-8 md:mb-12">Soft skills</h2>
+        {/* <h2 className="text-center text-2xl sm:text-3xl font-bold text-zinc-300 mt-12 mb-8 md:mb-12">Soft skills</h2> */}
         
-        <div className='grid grid-cols-1 sm:grid-cols-2 sm:gap-x-16 lg:grid-cols-3 lg:gap-x-24'>
+        {/* <div className='grid grid-cols-1 sm:grid-cols-2 sm:gap-x-16 lg:grid-cols-3 lg:gap-x-24'>
             {softSkills.map((skill, index) => (
                 <motion.div
                     key={index}
@@ -91,7 +91,7 @@ export default function SkillSection() {
                     <p className='text-zinc-900 font-semibold align-middle mx-4'>{skill.name}</p>  
                 </motion.div>
             ))}
-        </div>
+        </div> */}
 
         {/*
         <div className='flex justify-center mt-16'>

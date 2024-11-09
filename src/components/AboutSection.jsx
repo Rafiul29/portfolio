@@ -63,7 +63,7 @@ export default function AboutSection() {
 
   return (
     <section className="text-zinc-300" id="about-me">
-      <div className="md:grid md:grid-cols-2 gap-8 items-start py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
