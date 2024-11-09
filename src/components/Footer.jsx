@@ -32,7 +32,7 @@ const navLinks = [
 
 const Footer = () => {
   return (
-    <footer className="footer py-5 border-t border-1 bg-black/9-0">
+    <footer className="footer py-5  bg-black/50  border-t border-gray-700">
       <div className="flex flex-col space-y-2">
         <div className="flex justify-center  gap-3">
           {navLinks.map((link, index) => (
