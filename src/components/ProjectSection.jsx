@@ -6,12 +6,13 @@ import ProjectCard from "./ProjectCard";
 import { motion, useInView } from "framer-motion";
 
 
+
 const projectsData = [
     {
         id: 1,
         title: "Tasty Trails: Food Delivery App.",
         description: "A seamless food delivery platform where users can browse menus, place orders, and track deliveries in real-time, with efficient tools for both customers and restaurant admins.",
-        image: "/images/projects/1.png",
+        image: "/images/projects/tasty-trails.png",
         gitUrl: "https://github.com/Rafiul29/tasty-trails-client.git",
         previewUrl: "https://tasty-trails-client.vercel.app/",
     },
@@ -19,19 +20,29 @@ const projectsData = [
         id: 2,
         title: "RentVista: Rental Made Easy",
         description: "RentVista: Rental Made Easy Discover, rent, and manage properties seamlessly with RentVista, your go-to platform for connecting renters and property owners.",
-        image: "/images/projects/2.png",
+        image: "/images/projects/rentvista.png",
         gitUrl: "https://github.com/Rafiul29/rent-vista-client.git",
         previewUrl: "https://rent-vista-client-eta.vercel.app/",
     },
     {
         id: 3,
+        title: "Smart & Secure Bank Management System ",
+        description: "A simple and secure Bank Management System built with Django. This project allows users to manage bank accounts, perform transactions, and track financial activities.",
+        image: "/images/projects/bank-management-system.png",
+        gitUrl: "https://github.com/Rafiul29/Bank-Management-System.git",
+        previewUrl: "https://bank-management-system-zk1z.onrender.com/",
+    },
+    {
+        id: 4,
         title: "CourseDemy: Empowering Learning with Technology",
         description: "Built with Next.js, React, Prisma, Tailwind CSS, NextAuth, and Stripe for a fast, secure, and responsive platform.",
-        image: "/images/projects/3.png",
+        image: "/images/projects/coursedemy.png",
         gitUrl: "https://github.com/Rafiul29/cordemy.git",
         previewUrl: "https://cordemy-beta.vercel.app/",
     },
 ];
+
+
 
 
 
