@@ -137,7 +137,7 @@ export default function ContactSection({ isHomepage }) {
           </h2>
           <p className="text-zinc-500 mb-2">Md Rafiul Islam</p>
           <p className="text-zinc-500 mb-2">rafiulislamcse29@gmail.com</p>
-          <p className="text-zinc-500 mb-2">+8801640080698</p>
+          <p className="text-zinc-500 mb-2">+01571257567</p>
           <p className="text-zinc-500 mb-6">Pabna, Dhaka, Bangladesh</p>
           <div className="flex space-x-5 justify-center md:justify-start">
             <Link

@@ -8,9 +8,9 @@ export default function SkillSection() {
 
 
     const techSkills = [
-        { name: 'Next.js,', percentage: 100 },
-        { name: 'React', percentage: 100 },
-        { name: 'Redux,', percentage: 70 },
+        { name: 'Next.js', percentage: 80 },
+        { name: 'React', percentage: 90 },
+        { name: 'Redux', percentage: 70 },
         { name: 'JavaScript', percentage: 70 },
         { name: 'Tailwind CSS,', percentage: 95 },
         { name: 'Tailwind CSS', percentage: 100 },
@@ -22,6 +22,7 @@ export default function SkillSection() {
         { name: 'Express.js', percentage: 65},
         { name: 'MongoDB', percentage: 70},
         { name: 'SQL', percentage: 80},
+        { name: 'MySQL', percentage: 80},
         { name: 'C', percentage: 85},
         { name: 'C++', percentage: 80},
         { name: 'Python', percentage: 50},

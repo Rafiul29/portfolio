@@ -20,7 +20,7 @@ export default function HeroSection() {
 
             <br></br>
             <TypeAnimation
-              sequence={["Rafiul", 1000, "Python Developer", 1000]}
+              sequence={["Rafiul", 1000, "Full-Stack Developer", 1000]}
               wrapper="span"
               speed={10}
               repeat={Infinity}
@@ -28,11 +28,7 @@ export default function HeroSection() {
           </h1>
 
           <p className="text-zinc-300 text-base sm:text-lg lg:text-xl mb-6">
-            I&apos;m Skilled in Python, Django, and Django REST Framework, I
-            build scalable APIs and backend solutions focused on performance and
-            reliability for modern web applications. Passionate about clean code
-            and seamless user experience, I create efficient, maintainable
-            backend architectures..
+            I&apos;m  Full-Stack Developer skilled in Python, Django, and Django REST Framework, with experience building scalable APIs and performant backend systems. I also work with Node.js and Express for backend development. On the frontend, I'm proficient with React, Tailwind CSS, and crafting seamless user experiences — all with a focus on clean, maintainable code.
           </p>
 
           <div>

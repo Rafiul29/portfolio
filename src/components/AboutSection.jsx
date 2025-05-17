@@ -86,30 +86,28 @@ export default function AboutSection() {
               About Me
             </h2>
 
-            <div className='space-y-2'>
-            <p className="text-base lg:text-lg">
-              Hello! I'm a Python Developer with a strong foundation in Django
-              and Django REST Framework, dedicated to crafting powerful,
-              user-centered backend solutions. My work revolves around creating
-              APIs and backend architectures that are not only robust but also
-              scalable and secure, ensuring they meet the dynamic needs of
-              modern web applications.
-            </p>
-            <p className="text-base lg:text-lg">
-              In my projects, I prioritize clean, maintainable code and enjoy
-              optimizing database interactions to boost application performance.
-              I’m skilled in designing RESTful APIs that integrate smoothly with
-              front-end systems, providing users with fast and seamless
-              experiences. Whether it's building a new feature or refining
-              existing functionality, I approach every challenge with a
-              problem-solving mindset and a commitment to excellence.
-            </p>
-            <p className="text-base lg:text-lg">
-              I'm passionate about staying updated with the latest industry
-              trends, tools, and best practices, always aiming to improve my
-              craft. My goal is to create backends that not only serve today’s
-              requirements but are ready for tomorrow’s challenges.
-            </p>
+            <div className="space-y-4">
+              <p className="text-base lg:text-lg">
+                Hello! I'm a Full-Stack Developer with expertise in Python,
+                Django, and Django REST Framework, combined with strong
+                front-end skills using React and Tailwind CSS. I build scalable,
+                secure, and high-performing web applications from backend
+                architecture to seamless user interfaces.
+              </p>
+              <p className="text-base lg:text-lg">
+                I focus on clean, maintainable code and efficient API design,
+                ensuring smooth integration between frontend and backend.
+                Whether developing new features or optimizing performance, I
+                approach every project with a problem-solving mindset and
+                attention to detail.
+              </p>
+              <p className="text-base lg:text-lg">
+                I also have experience with Node.js and Express for backend
+                services, and I'm always exploring new technologies to improve
+                my stack. Passionate about modern development practices, I aim
+                to deliver robust solutions that scale with your product’s
+                needs.
+              </p>
             </div>
 
             {/* <div className="flex flex-row justify-start mt-8">
