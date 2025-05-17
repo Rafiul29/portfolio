@@ -33,7 +33,7 @@ export default function HeroSection() {
 
           <div>
             <Link
-              to="https://drive.google.com/file/d/10vCnJHnpDHLEjGR0rXNp3oJ9Br1ExA85/view?usp=sharing"
+              to="https://drive.google.com/file/d/1VpFIDzMcc0eHOyurphBhaB24xSi5a1td/view?usp=sharing"
               target="_blank"
             >
               <button

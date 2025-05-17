@@ -10,7 +10,7 @@ const EducationSection = () => {
           <li className="ms-4 mb-8">
             <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
             <time className="mb-1 text-lg font-normal leading-none text-gray-400 dark:text-gray-500">
-              2019 – 2024
+              2019 – 2025
             </time>
             <h3 className="text-xl font-semibold dark:text-white">
               Islamic University, Kushtia
